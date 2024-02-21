@@ -3,6 +3,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $('#peso').mask('000.000', { reverse: true });
+});
+
+$(document).ready(function() {
     $("#calcular").click(function() {
       var altura = parseFloat($("#altura").val());
       var peso = parseFloat($("#peso").val());
